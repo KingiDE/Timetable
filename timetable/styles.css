@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  background: #1b1b1b;
+  color: #f5f5f5;
+  font-family: "Inter";
+  text-align: center;
+}
+
+h1 {
+  font-family: "Poppins";
+}
+
+/* Inputs */
+input {
+  min-width: 0;
+  max-width: 180px;
+  font-family: "Inter";
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  background-color: #1b1b1b;
+  color: #f5f5f5;
+}
+
+.pause > input {
+  background: #2b2b2b;
+  font-size: 14px;
+  opacity: 70%;
+}
+
+/* Tables */
+table {
+  margin-top: 16px;
+  --table-border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+
+  th {
+    width: 160px;
+  }
+
+  /* Erstes child der Header-Row */
+  & th:first-child {
+    border-top-left-radius: var(--table-border-radius);
+  }
+
+  /* Letztes child der Header-Row */
+  & th:last-child {
+    border-top-right-radius: var(--table-border-radius);
+  }
+
+  /* Erstes child der letzten Data-Row */
+  & tr:last-child td:first-child {
+    border-bottom-left-radius: var(--table-border-radius);
+  }
+
+  /* Letztes child der letzten Data-Row */
+  & tr:last-child td:last-child {
+    border-bottom-right-radius: var(--table-border-radius);
+  }
+
+  /* Style for every element */
+  & :is(th, td) {
+    border: solid #393939;
+    border-width: 0 1px 1px 0;
+    padding: 6px 10px;
+  }
+
+  /* Top side (+ header styling) */
+  & :is(th) {
+    font-size: 18px;
+    background: rgb(34, 34, 34);
+    border-top-width: 1px;
+  }
+
+  /* Left side */
+  & :is(th, td):first-child {
+    border-left-width: 1px;
+  }
+
+  .pause {
+    background: #2b2b2b;
+    font-size: 14px;
+    opacity: 70%;
+    padding: 4px 10px;
+  }
+
+  .room {
+    font-size: 14px;
+  }
+}
