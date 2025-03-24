@@ -17,4 +17,4 @@ When you're finished, use your favourite screenshot-tool to save your result. Fi
 
 Timetable originally was an one-weekend-project that I created to produce a good looking overview of my timetable for school. 
 At one point I decided to release this idea to let many other people profit from this "software".
-In my case, I use this website to create a widget for my tablet 
+In my case, I use this website to create a widget for my tablet. 
